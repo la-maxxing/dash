@@ -2,3 +2,5 @@ requests
 dash
 plotly
 pandas
+pydantic
+python-dotenv

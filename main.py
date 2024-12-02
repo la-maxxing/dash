@@ -1,7 +1,9 @@
 from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
+from dotenv import load_dotenv
 
+load_dotenv()
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv')
 
 app = Dash()
@@ -24,4 +26,4 @@ def update_graph(value):
 if __name__ == '__main__':
     app.run(debug=True)
 
-# https://webstat.banque-france.fr/fr/
+
